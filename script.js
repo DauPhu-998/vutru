@@ -841,6 +841,11 @@ function playGalaxyAudio() {
 }
 preloadGalaxyAudio();
 
+// Bấm nút là chạy
+document.getElementById("play-btn").addEventListener("click", () => {
+  playGalaxyAudio();
+});
+</script>
 
 
 // ---- VÒNG LẶP ANIMATE ----
@@ -1323,5 +1328,6 @@ window.addEventListener('orientationchange', () => {
   // Thêm độ trễ để trình duyệt cập nhật kích thước chính xác
   setTimeout(checkOrientation, 200);
 });
+
 
 
